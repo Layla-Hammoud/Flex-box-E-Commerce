@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:aqua;
+}
+.wrapper{
+    display: flex;
+    flex-flow:row wrap
+}
+.wrapper > * {
+    margin:10px;
+    border-radius: 20px;
+    flex:1 100%;
+}
+img{
+    height: 75%;
+    width:100%;
+    margin:0;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+
+header{
+    
+}
+.cards{
+    height:300px;
+    background-color: tomato;
+}
+@media all and (min-width:800px){
+    .wrapper > *{
+        flex:3 20% 
+    } 
+}
+@media all and (min-width:600px){
+    .wrapper > *{
+        flex:2 20% 
+    } 
+}
