@@ -3,14 +3,18 @@ body{
     padding:0;
     font-family: Helvetica, Arial, serif;    
 }
+header{
+    height: 100px;
+}
 h1{
-
+    color: #2f22c8;
     font-size:36px;
     text-align: center;
 }
 .wrapper{
     display: flex;
-    flex-flow:row wrap
+    flex-flow:row wrap;
+    justify-content: space-around;
 }
 .wrapper > * {
     margin:10px;
@@ -38,8 +42,25 @@ p{
     left:20px
 }
 .cards{
+    margin: 10px;
     height:350px;
     background-color:#F5F5F5;
+}
+footer{
+    height: 50px;
+    background-color:#2f22c8;
+    font-size: large;
+    color: #F5F5F5;
+}
+
+
+@media all and (min-width:500px){
+    h6{
+        font-size:medium;
+    }
+    .wrapper > *{
+        flex: 0 1 45%;
+    } 
 }
 
 
